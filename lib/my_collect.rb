@@ -2,8 +2,10 @@ def my_collect(array)
   i = 0 
   collection
   while i < array.length 
-    collection << yieldarray[i]
+    collection << yield(array[i])
     i += 1
   end 
-  co
+  collection
 end
+
+my_collect
