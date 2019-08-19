@@ -1,11 +1,11 @@
 def my_collect(array)
   i = 0 
-  collection
+  caller_location
   while i < array.length 
-    collection << yield(array[i])
+    caller_location << yield(array[i])
     i += 1
   end 
-  collection
+  caller_location
 end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
